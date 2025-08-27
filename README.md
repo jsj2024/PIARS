@@ -78,15 +78,9 @@ pip install vllm==0.5.1
 ```
 Then, set the `--vllm_acc true` flag in your evaluation scripts.
 
-## Inference with PIARS Adapter and Gibberish Filter
-
-A key outcome of PIARS training is that when the model is induced towards a harmful state, the representation separation prevents it from generating malicious content. However, this can sometimes lead to the generation of nonsensical or "gibberish" text. To handle this, we employ a simple post-processing filter that detects gibberish and replaces it with a standard refusal response. This ensures a clean user experience without affecting the model's performance on normal, benign outputs. We provide a complete example in `piars_demo.py`.
-
-![alt text](asset/piars_demo_case.png)
-*(An example showing a multi-turn attack where the PIARS model initially produces incoherent text, which is then caught by the filter and replaced with a safe refusal.)*
 
 ## Acknowledgement
-Our codebase leverages parts of the framework from [Circuit Breaker](https://github.com/GraySwanAI/circuit-breakers). We thank the authors for making their work public.
+Our codebase leverages parts of the framework from [Circuit Breaker](https://github.com/GraySwanAI/circuit-breakers) and . We thank the authors for making their work public.
 
 ## Citation
 If you find our work useful, please consider citing our paper:
