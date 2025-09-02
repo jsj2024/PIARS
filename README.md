@@ -4,7 +4,7 @@
 
 In this paper, we investigate the vulnerability of Large Language Models (LLMs) to progressive, multi-turn jailbreak attacks, where adversaries gradually steer conversations from benign topics to harmful ones. We find that existing defense mechanisms often fail in these scenarios because they do not account for the cumulative "induction" effect of the conversation history. This oversight allows the model's internal representations to be slowly guided into a harmful state. To address this, we propose PIARS (Progressive Induction-Aware Representation Separation). PIARS introduces a novel training methodology that explicitly models the risk of each conversational turn by calculating an induction degree. This degree is then used to apply a proportional separation loss, pushing potentially harmful conversational states away from safe ones. By progressively strengthening this separation as the induction risk grows, PIARS establishes a robust defense against gradual attacks while preserving the model's helpfulness and usability in benign conversations.
 
-![alt text](asset/pipeline.png)
+![alt text](asset/pipeline1.png)
 
 *(A conceptual diagram showing how PIARS calculates an induction degree at each turn to apply a separation force, preventing the conversation state from drifting into a harmful region.)*
 
