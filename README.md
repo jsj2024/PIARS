@@ -1,7 +1,5 @@
 # PIARS: Progressive Induction-Aware Representation Separation for Defending Against Multi-Turn Attacks
 
-[Paper](https://arxiv.org/abs/your_paper_link_here) | [Code](https://github.com/your_github_repo/PIARS) | [Models](https://huggingface.co/collections/your_hf_collection_link)
-
 In this paper, we investigate the vulnerability of Large Language Models (LLMs) to progressive, multi-turn jailbreak attacks, where adversaries gradually steer conversations from benign topics to harmful ones. We find that existing defense mechanisms often fail in these scenarios because they do not account for the cumulative "induction" effect of the conversation history. This oversight allows the model's internal representations to be slowly guided into a harmful state. To address this, we propose PIARS (Progressive Induction-Aware Representation Separation). PIARS introduces a novel training methodology that explicitly models the risk of each conversational turn by calculating an induction degree. This degree is then used to apply a proportional separation loss, pushing potentially harmful conversational states away from safe ones. By progressively strengthening this separation as the induction risk grows, PIARS establishes a robust defense against gradual attacks while preserving the model's helpfulness and usability in benign conversations.
 
 ![alt text](asset/pipeline1.png)
@@ -83,4 +81,4 @@ Then, set the `--vllm_acc true` flag in your evaluation scripts.
 Our codebase leverages parts of the framework from [Circuit Breaker](https://github.com/GraySwanAI/circuit-breakers) and [X-Boundary](https://github.com/AI45Lab/X-Boundary). We thank the authors for making their work public.
 
 ## Citation
-If you find our work useful, please consider citing our paper:
+wait..
