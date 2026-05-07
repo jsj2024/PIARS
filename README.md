@@ -9,7 +9,7 @@ In this paper, we investigate the vulnerability of Large Language Models (LLMs) 
 *(A conceptual diagram showing how PIARS calculates an induction degree at each turn to apply a separation force, preventing the conversation state from drifting into a harmful region.)*
 
 ## Snapshot of Results
-![alt text](asset/experiment.png)
+![alt text](asset/main_results.png)
 *(Experimental results demonstrating PIARS's superior performance against state-of-the-art multi-turn attacks while maintaining low over-refusal rates.)*
 
 ## Installation
